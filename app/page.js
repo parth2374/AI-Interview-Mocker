@@ -1,7 +1,8 @@
 'use client'
 
+import { Button } from "@/components/ui/button";
+import Image from "next/image";
 import { useRouter } from "next/navigation";
-import './pagecss.css';
 
 export default function Home() {
 
@@ -13,6 +14,12 @@ export default function Home() {
 
   return (
     <>
+      <div className='p-5 shadow-lg bg-[#151714]'>
+        <div className="flex items-center justify-between">
+          <Image src={'/logo.svg'} width={80} height={5} alt='Logo' />
+          <Button>AI Interviews</Button>
+        </div>
+      </div>
       <section className="relative bg-[url(https://images.unsplash.com/photo-1439792675105-701e6a4ab6f0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8OTV8fGRhcmslMjBiZyUyMHdlYnNpdGV8ZW58MHx8MHx8fDA%3D)] bg-cover bg-center bg-no-repeat text-white">
         <div className="mx-auto max-w-screen-xl px-4 py-32 lg:flex lg:h-screen lg:items-center">
           <div className="mx-auto max-w-3xl text-center">
